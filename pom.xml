@@ -86,11 +86,19 @@
 </dependencies>
 
 <build>
+    <sourceDirectory>backend/main/java</sourceDirectory>
+    <resources>
+        <resource>
+            <directory>backend/main/resources</directory>
+        </resource>
+    </resources>
+    
     <plugins>
         <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
+            <mainClass>com.app.backend.BackendApplication</mainClass>
             <excludes>
                 <exclude>
                     <groupId>org.projectlombok</groupId>
