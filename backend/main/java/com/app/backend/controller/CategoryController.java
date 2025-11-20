@@ -1,8 +1,8 @@
 package com.app.backend.controller;
 
-import com.app.backend.model.Category;            
-import com.app.backend.service.CategoryService;    
-import com.app.backend.dto.MessagerResponse;  
+import com.app.backend.model.Category;
+import com.app.backend.service.CategoryService;
+import com.app.backend.dto.MessagerResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
