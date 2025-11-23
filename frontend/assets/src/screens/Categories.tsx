@@ -98,7 +98,7 @@ export default function CategoriesScreen(){
                                 description: item.description,
                                 active: !item.active 
                             });
-                            Alert.alert('Éxito', Categoría ${item.active ? 'desactivada' : 'activada'});
+                            Alert.alert('Éxito', `Categoria ${item.active ? 'desactivada' : 'activada'}`);
                             loadCategories();
                         } catch (error) {
                             Alert.alert('Error', `No se pudo ${action}`);
@@ -119,7 +119,7 @@ export default function CategoriesScreen(){
             setEditing(null);
         };
 
-        //vista completa 
+        //vista completa
         const renderCategory= ({ item }: { item: any }) => (
             <View style={categoriesStyles.categoryCard}>
             <View style={categoriesStyles.categoryInfo}>
